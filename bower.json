@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap3",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mxcl/homebrew",
+  "authors": [
+    "1shiharat <akeome1369@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components",
+    "test",
+    "tests"
+  ]
+}
