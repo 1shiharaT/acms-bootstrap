@@ -1,31 +1,40 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title><!-- BEGIN_MODULE Touch_Entry -->%{ENTRY_TITLE} | <!-- END_MODULE Touch_Entry --><!-- BEGIN_MODULE Touch_Category -->%{CATEGORY_NAME} | <!-- END_MODULE Touch_Category -->%{BLOG_NAME}</title>
-<meta name="keywords" content="%{META_KEYWORDS}" />
-<meta name="description" content="%{META_DESCRIPTION}" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--#include file="/include/head/docs-link.html"-->
-<!--#include file="/include/head/js.html"-->
-</head>
-<body>
-	<!-- ナビゲーション -->
-	<!--#include file="/include/header/navigationDocs.html" -->
-
+<!--#include file="/templates/header.html" -->
 	<div class="container">
 
 	<!-- 管理画面 -->
 	<!--#include file="/admin/action.html"-->
 		<!-- エントリーサマリー　(テンプレート一覧) -->
-			<!-- BEGIN_MODULE Entry_Summary id="exampleSummary" -->
 			<div style="margin-right:20px">
-			<!--#include file="/admin/module/setting.html"-->
-				<div class="bs-docs-section">
-					<div class="page-header">
-						<h1>Examples</h1>
+				<div id="myCarousel" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="item">
+							<img src="http://dummyimage.com/1170x600/4d494d/686a82.gif&text=画像1" alt="placeholder+image">
+							<div class="carousel-caption">
+								<h4>First Thumbnail label</h4>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="http://dummyimage.com/1170x600/4d494d/686a82.gif&text=画像2" alt="placeholder+image">
+							<div class="carousel-caption">
+								<h4>Second Thumbnail label</h4>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
+						<div class="item active">
+							<img src="http://dummyimage.com/1170x600/4d494d/686a82.gif&text=画像3" alt="placeholder+image">
+							<div class="carousel-caption">
+								<h4>Third Thumbnail label</h4>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
 					</div>
-					<p class="lead"></p>
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+				</div>
+				<div class="bs-docs-section">
+				<!-- BEGIN_MODULE Entry_Summary id="exampleSummary" -->
+				<!--#include file="/admin/module/setting.html"-->
 					<div class="row bs-examples">
 					<!-- BEGIN unit:loop -->
 						<!-- BEGIN entry:loop -->
@@ -46,13 +55,5 @@
 
 	</div><!-- /container -->
 
-	<!-- フッター -->
-	<!-- #include file="/include/footer/footerDocs.html" -->
 
-
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="/js/bootstrap.min.js"></script>
-</body>
-</html>
+<!--#include file="/templates/footer.html" -->
